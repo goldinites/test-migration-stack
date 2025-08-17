@@ -9,9 +9,9 @@
     >
       <AccordionHeader class="flex">
         <AccordionTrigger
-          class="group flex flex-1 items-center gap-x-2 py-4 px-5 text-sm font-medium border border-gray-200"
+          class="group flex flex-1 items-center gap-x-2 border border-gray-200 px-5 py-4 text-sm font-medium"
         >
-          <div class="flex items-center flex-1 gap-x-2">
+          <div class="flex flex-1 items-center gap-x-2">
             <AvatarRoot
               class="bg-blackA3 inline-flex size-8 select-none items-center justify-center overflow-hidden rounded-full align-middle"
             >
@@ -30,7 +30,7 @@
             <span>{{ getUserFullName(user) }}</span>
           </div>
           <svg
-            class="h-4 w-4 shrink-0 text-slate-500 ease-[cubic-bezier(0.87,0,0.13,1)] transition-transform duration-300 group-data-[state=open]:rotate-180"
+            class="h-4 w-4 shrink-0 text-slate-500 transition-transform duration-300 ease-[cubic-bezier(0.87,0,0.13,1)] group-data-[state=open]:rotate-180"
             viewBox="0 0 16 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
