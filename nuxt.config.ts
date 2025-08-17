@@ -1,0 +1,20 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  compatibilityDate: '2025-07-15',
+  devtools: { enabled: true },
+  modules: [
+    '@nuxt/eslint',
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/test-utils/module',
+    '@nuxtjs/i18n',
+    'radix-vue/nuxt',
+  ],
+  pinia: {
+    storesDirs: ['./app/stores'],
+  },
+  i18n: {
+    defaultLocale: 'ru',
+    locales: [{ code: 'ru', language: 'ru-RU', file: 'ru.json' }],
+  },
+});

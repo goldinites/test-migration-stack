@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Nuxt build output
+.nuxt
+.output
+
+# Misc
+.git
+.idea
+.dist
+coverage
+.DS_Store
