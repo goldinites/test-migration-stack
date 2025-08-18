@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'radix-vue/nuxt',
   ],
+  components: [{ path: '~/components', pathPrefix: false }],
   pinia: {
     storesDirs: ['./app/stores'],
   },

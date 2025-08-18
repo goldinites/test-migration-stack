@@ -1,4 +1,4 @@
-import { object, number } from 'yup';
+import { object, number, type InferType } from 'yup';
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
@@ -11,11 +11,13 @@ export default defineEventHandler(async (event) => {
       .optional(),
   });
 
+  type Query = InferType<typeof schema>;
+
   try {
-    const { limit } = await schema.validate(query, { abortEarly: false });
+    const validatedQuery: Query = await schema.validate(query, { stripUnknown: true });
 
     return await event.$fetch<UsersResponse>(`https://dummyjson.com/users`, {
-      query: { limit },
+      query: validatedQuery,
     });
   } catch (err: unknown) {
     throw createError({

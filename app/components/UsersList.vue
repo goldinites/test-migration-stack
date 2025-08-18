@@ -46,7 +46,7 @@
       </AccordionHeader>
       <AccordionContent
         class="overflow-hidden text-sm data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown"
-        style="--slide-down-duration: 150ms; --slide-up-duration: 150ms"
+        style="--slide-down-duration: 250ms; --slide-up-duration: 150ms"
       >
         <div class="px-5 py-4 text-slate-700">
           <div>
