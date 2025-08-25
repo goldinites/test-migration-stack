@@ -18,4 +18,9 @@ export default defineNuxtConfig({
     defaultLocale: 'ru',
     locales: [{ code: 'ru', language: 'ru-RU', file: 'ru.json' }],
   },
+  runtimeConfig: {
+    public: {
+      API_BASE_URL: process.env.NUXT_PUBLIC_API_BASE_URL,
+    },
+  },
 });
